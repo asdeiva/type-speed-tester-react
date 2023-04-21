@@ -220,6 +220,7 @@ const TypingBox = () => {
           </div>
         </div>
       )}
+      <div className="alert-message">Please use a PC to access this website. </div>
       <input
         type="text"
         className="hidden-input"

@@ -2,9 +2,12 @@ import React from "react";
 import Select from "react-select";
 import { themeOptions } from "../Utils/ThemeOptions";
 import { useTheme } from "../Context/ThemeContext";
-import { GitHub, LinkedIn } from "@mui/icons-material";
+import { Coffee, GitHub, LinkedIn } from "@mui/icons-material";
 
 function Footer() {
+  const gitHubRepoLink = "https://github.com/asdeiva/type-speed-tester-react";
+  const linkedInLink = "https://www.linkedin.com/in/deiva-sivam/";
+  const buyMeCoffeLink = 'https://www.buymeacoffee.com/asdeiva';
   const { theme, setTheme } = useTheme();
   const handleChange = (e) => {
     setTheme(e.value);
@@ -16,8 +19,15 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer-left">
-        <GitHub fontSize="large" style={{ cursor: "pointer" }} />
-        <LinkedIn fontSize="large" style={{ cursor: "pointer" }} />
+        <a href={gitHubRepoLink}  className="link" target="_blank" rel="noopener noreferrer">
+          <GitHub fontSize="large" />
+        </a>
+        <a href={linkedInLink} className="link" target="_blank" rel="noopener noreferrer">
+          <LinkedIn fontSize="large" />
+        </a>
+        <a href={buyMeCoffeLink} className="link" target="_blank" rel="noopener noreferrer">
+          <Coffee fontSize="large" />
+        </a>
       </div>
       <div className="footer-right">
         <Select

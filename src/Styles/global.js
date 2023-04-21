@@ -1,13 +1,18 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
 
+}
 body{
+    font-family: 'Ubuntu', sans-serif;
     background : ${({ theme }) => theme.background};
     color: ${({ theme }) => theme.textColor};
     margin : 0;
     padding : 0;
-    box-sizing: border-box;
     transition : all 0.25 linear;
 }
 .canvas{
@@ -16,7 +21,7 @@ body{
     grid-auto-flow : row;
     grid-template-row: auto 1fr auto;
     gap: 0.5rem;
-    padding : 2rem;
+    padding : 0.5rem;
     // width: 100vw;
     align-items: center;
     text-align: center;  
@@ -43,6 +48,7 @@ body{
     opacity:0;
     pointer: none;
 }
+
 .current{
     border-left: 1px solid;
     animation: blinking 2s infinite;
@@ -86,7 +92,6 @@ body{
 .project-title{
     display:flex;
     font-size: 1.5rem;
-    text-transform: uppercase;
     align-items:center;
 }
 .correct{
@@ -104,15 +109,22 @@ body{
     font-size:1.15rem;
     justify-content : space-between;
     padding :0.5 rem;
+    margin-bottom:1rem;
 }
 .modes{
     display: flex;
     gap : 0.4rem;
 }
 
+.time-mode{
+    padding:3px;
+}
+
 .time-mode:hover{
-    color:green;
     cursor: pointer;
+    background-color:${({ theme }) => theme.textColor};
+    color:${({ theme }) => theme.background};
+    border-radius:10px;
 }
 
 .footer{
@@ -126,7 +138,13 @@ body{
 }
 .footer-left{
     display: flex;
+    gap:5px;
     align-items:center;
+}
+.link{
+    text-decoration: none;
+    cursor: pointer;
+    color: ${({ theme }) => theme.textColor};
 }
 .stats-box{
     display:flex;
@@ -196,8 +214,32 @@ body{
     justify-content:center;
     align-items:center;
 }
+.alert-message{
+    display:none;
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+    .canvas{
+        gap:0;
+        min-height : 95vh;
+        padding:0;
+    }
+    .alert-message{
+        display:block;
+        margin-top:10px;
+        animation: blink 1.5s infinite;
+        @keyframes blink{
+            0% {
+                opacity: 1;
+              }
+              50% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 1;
+              }
+        }
+    }
     .type-box {
       width:430px;
     }
@@ -211,17 +253,43 @@ body{
         width:430px;
     }
     .user-profile{
-        width:400px;
+        margin-top:10px;
+        width: 430px;
+        // margin : auto;
+        display:flex;
+    }
+    
+    .user{
+        width:60%;
+        display:flex;
+        margin-top:10px;
+        margin-bottom:20px;
+        font-size:1.5rem;
+        padding:1rem;
+        border-right : 2px solid;
+    }
+    .info{
+        width:100%;
+        padding:1rem;
+        margin-top:1rem;
+    }
+    .picture{
+        width:0%;
+        display:none;
+    }
+    
+    .total-tests{
+        width:40%;
+        font-size: 2rem;
     }
     .table, .graph-user-page{
+        margin:auto;
         width:430px;
     }
     .stats-box{
         width:400px;
     }
-    .picture{
-        display:none;
-    }
+    
     .total-tests{
         font-size: 2rem;
     }
