@@ -2,7 +2,7 @@ import React from "react";
 import Select from "react-select";
 import { themeOptions } from "../Utils/ThemeOptions";
 import { useTheme } from "../Context/ThemeContext";
-import { Coffee, GitHub, LinkedIn } from "@mui/icons-material";
+import { Book, GitHub, LinkedIn } from "@mui/icons-material";
 
 function Footer() {
   const gitHubRepoLink = "https://github.com/asdeiva/type-speed-tester-react";
@@ -26,7 +26,7 @@ function Footer() {
           <LinkedIn fontSize="large" />
         </a>
         <a href={buyMeCoffeLink} className="link" target="_blank" rel="noopener noreferrer">
-          <Coffee fontSize="large" />
+          <Book fontSize="large" />
         </a>
       </div>
       <div className="footer-right">

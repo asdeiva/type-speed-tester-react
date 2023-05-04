@@ -1,6 +1,3 @@
-# Typing Speed Tester || [Deploy Link] (https://typingspeedtester-react.netlify.app/)
-
-
 # Typing Test with Firebase Integration
 
 This is a web application that allows users to take a typing test and save their results. The application uses Firebase for user authentication, database storage, and social media login options.
@@ -36,8 +33,7 @@ To install and run the application, follow these steps:
 1. Clone the repository.
 2. Install dependencies with `npm install`.
 3. Create a Firebase project and set up authentication and Firestore.
-4. Add Firebase configuration to the `.env` file.
-5. Start the application with `npm start`.
+4. Start the application with `npm start`.
 
 ## Usage
 
@@ -60,3 +56,6 @@ To use the application, follow these steps:
 - friend request
 - store modes information in localstorage
 - leaderboard
+
+
+[Deploy Link] (https://typingspeedtester-react.netlify.app/)
