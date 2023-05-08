@@ -83,6 +83,7 @@ const AccountCircle = () => {
         handleClose();
       })
       .catch((err) => {
+        console.log(err);
         toast.error(
           errorMapping[err.code] || "Not able to use google authendication",
           {
