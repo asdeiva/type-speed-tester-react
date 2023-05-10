@@ -1,5 +1,6 @@
 {
   "name": "type-speed-tester",
+  "homepage": "https://asdeiva.github.io/type-speed-tester-react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
