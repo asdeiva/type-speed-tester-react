@@ -37,8 +37,8 @@ const oblivion = {
 const blueDolphine = {
   label: "Theme",
   background: "#003950",
-  textColor: "#82eaff",
-  typeBoxText: "#82eaff",
+  textColor: "#ffcefb",
+  typeBoxText: "#00e4ff",
 };
 const aurora = {
   label: "Theme",
