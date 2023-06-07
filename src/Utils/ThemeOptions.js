@@ -4,13 +4,6 @@ const darkTheme = {
   textColor: "white",
   typeBoxText: "gray",
 };
-
-const redTheme = {
-  label: "Theme",
-  background: "red",
-  textColor: "yellow",
-  typeBoxText: "pink",
-};
 const fledging = {
   label: "Theme",
   background: "#3B363F",
@@ -35,11 +28,47 @@ const paper = {
   textColor: "#4e4e4e",
   typeBoxText: "#4d4d4d",
 };
+const oblivion = {
+  label: "Theme",
+  background: "#313231",
+  textColor: "#f7f5f1",
+  typeBoxText: "#a5a096",
+};
+const blueDolphine = {
+  label: "Theme",
+  background: "#003950",
+  textColor: "#82eaff",
+  typeBoxText: "#82eaff",
+};
+const aurora = {
+  label: "Theme",
+  background: "#011926",
+  textColor: "#fff",
+  typeBoxText: "#245c69",
+};
+const trance = {
+  label: "Theme",
+  background: "#00021b",
+  textColor: "#fff",
+  typeBoxText: "#3c4c79",
+};
+const tronOrange = {
+  label: "Theme",
+  background: "#0d1c1c",
+  textColor: "#f60",
+  typeBoxText: "fff",
+};
 export const themeOptions = [
   { label: "Dark", value: darkTheme },
-  { label: "Red", value: redTheme },
   { label: "Fledging", value: fledging },
   { label: "Super User", value: superUser },
   { label: "VS Code", value: vsCode },
   { label: "Paper", value: paper },
+  { label: "Oblivion", value: oblivion },
+  { label: "Blue Dolphine", value: blueDolphine },
+  { label: "Aurora", value: aurora },
+  { label: "Trance", value: trance },
+  { label: "Tron Orange", value: tronOrange },
+
+
 ];

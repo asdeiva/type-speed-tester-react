@@ -122,8 +122,8 @@ const AccountCircle = () => {
           justifyContent: "center",
         }}
       >
-        <div style={{ width: "400px", textAlign: "center" }}>
-          <AppBar position="static" style={{ background: "transparent" }}>
+        <div style={{ width: "400px", textAlign: "center",backgroundColor: theme.background ,opacity: '0.8' }}>
+          <AppBar position="static" style={{ background: 'transparent' }}>
             <Tabs
               value={value}
               onChange={handleValueChange}
